@@ -16,17 +16,57 @@
         <nav>
             <p class="logo" data-testid="slackDisplayName">Zainab Ibrahim</p>
             <div>
-                <ul class="nav-links">
+                <ul class="nav-links" id="navLinks">
                     <li><a href="">About</a></li>
                     <li><a href="">Skills</a></li>
                     <li><a href="">Goals</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
             </div>
-            <div class="menu"><i class="fa-solid fa-bars"></i></div>
+            <div class="menu-icon" id="menuIcon"><i class="fa-solid fa-bars"></i></div>
 
         </nav>
     </section>
+
+    <section class="hero">
+        <img src="profile2.jpg" data-testid="slackProfilePicture" alt="profile Picture" class="profile-picture"/>
+        <div class="about">
+            <h3 data-testid="slackDisplayName">Zainab Ibrahim </h3>
+            <h2>Frontend Developer</h2>
+            <p>Hey there! I'm Zainab, a frontend developer with a keen eye for design. I love building quality, virtually appealing web applications using javacritp and its frasmeworks. I am very passionate about building user friendly interfaces.</p>
+            <button class="btn">My Goals</button>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <div class="contact" id="contact">
+            <div>
+                <h2>Zainab Ibrahim</h2>
+                <p>Frontend Developer</p>
+                <p>zaynarb96@gmail.com</p>
+            </div>
+
+
+            <div class="links">
+                <a href="https://github.com/zainabibraheem" target='_blank' data-testid="myGithub"> <i class="fa-brands fa-github"></i> </a>
+                <a href="https://www.linkedin.com/in/zainabibrahim-/" target='_blank' data-testid="myLinkedIn"> <i class="fa-brands fa-linkedin"></i> </a>
+                <a href="" target='_blank' data-testid="slackEmail"> <i class="fa-solid fa-envelope"></i> </a>
+                <a href="https://twitter.com/zainabibraheem_" target='_blank' data-testid="myTwitter"> <i class="fa-brands fa-twitter"></i> </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="copyright-div">
+            <i class="fa-regular fa-copyright"></i>
+            <div id="Year"></div>
+            <p>Zainab Ibrahim.</p>
+            <p>All rights reserved.</p>
+        </div>
+
+    </footer>
 </body>
 
 </html>

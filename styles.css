@@ -5,7 +5,8 @@ body {
 
 nav {
     padding: 8px 60px;
-    background-color: #0c0b0b;
+    background-color: #FFFAFA;
+    color: #111111;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -13,7 +14,6 @@ nav {
 }
 
 .logo {
-   color: #FFFAFA;
    font-weight: bold;
    font-size: 20px;
 }
@@ -26,12 +26,110 @@ nav {
 
 
 .nav-links li a {
-    color: #FFFAFA;
     text-decoration: none;
 }
 
-.menu {
-    color: #FFFAFA;
+.menu-icon {
+    display: none;
     font-size: 22px;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 728px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .active {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+    }
+}
+
+.hero {
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+
+.profile-picture {
+    max-width: 300px;
+    border-radius: 50%;
+
+}
+
+.about {
+    max-width: 700px;
+    font-size: 20px;
+}
+
+.about h2, h3, p {
+    
+    
+}
+
+.btn {
+    background-color: #ffcc00;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 728px) {
+   .hero {
+    display: flex;
+    flex-direction: column;
+   } 
+}
+
+footer {
+    padding: 10px 60px;
+    background-color: #FFFAFA;
+    color: #111111;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+ display: flex;
+ gap: 24px;
+ font-size: 20px;
+ color: #FFFAFA
+}
+
+.copyright-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+@media screen and (max-width: 728px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .copyright-div {
+        justify-content: flex-start;
+    }
+
 }
