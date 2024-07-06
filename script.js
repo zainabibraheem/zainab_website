@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     const menuIcon = document.getElementById('menuIcon');
     const navLinks = document.getElementById('navLinks');
-    const year = document.getElementById('currentYear')
+    const year = document.getElementById('currentYear');
+    const day = document.getElementById('currentDay')
     let menuIsOpen = false;
 
     menuIcon.addEventListener('click', function () {
@@ -19,5 +20,23 @@ document.addEventListener('DOMContentLoaded', function () {
     const currentYear = new Date().getFullYear();
 
     Year.textContent = currentYear;
+
+    
+    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+    const currentDate = new Date();
+
+    const dayIndex = currentDate.getDay();
+
+    const currentDay = daysOfWeek[dayIndex];
+
+    const calender = new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+    })
+
+
+day.textContent = `${currentDay} ${calender}`;
 
 })
