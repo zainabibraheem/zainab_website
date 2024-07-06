@@ -4,8 +4,8 @@ body {
 }
 
 nav {
-    padding: 8px 60px;
-    background-color: #FFFAFA;
+    padding: 20px  60px ;
+    background-color: #FFFFFF;
     color: #111111;
     height: auto;
     display: flex;
@@ -57,7 +57,7 @@ nav {
 }
 
 .hero {
-    padding: 40px 60px;
+    padding: 70px 60px 0 60PX;
     display: flex;
     justify-content: space-around;
     font-family: sans-serif;
@@ -157,6 +157,7 @@ nav {
 .strategy-section {
     padding: 40px 60px;
     font-family: sans-serif;
+    background-color: #FFFAFA;
 }
 
 .strategy-section p {
@@ -221,8 +222,8 @@ nav {
 
 
 footer {
-    padding: 10px 60px;
-    background-color: #FFFAFA;
+    padding: 30px 60px;
+    background-color: #FFFFFF;
     color: #111111;
 }
 
