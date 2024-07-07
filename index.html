@@ -156,9 +156,9 @@
     <footer>
         <div class="contact" id="contact">
             <div class="contact-div">
-                <h3>Zainab Ibrahim</h3>
+                <h3 data-testid="slackDisplayName">Zainab Ibrahim</h3>
                 <p>Frontend Developer</p>
-                <p>zaynarb96@gmail.com</p>
+                <a href="mailto:zaynarb96@gmail.com" target="_blank"> <p data-testid="slackEmail">zaynarb96@gmail.com</p> </a>
             </div>
 
 
@@ -167,7 +167,7 @@
                         class="fa-brands fa-github"></i> </a>
                 <a href="https://www.linkedin.com/in/zainabibrahim-/" target='_blank' data-testid="myLinkedIn"> <i
                         class="fa-brands fa-linkedin"></i> </a>
-                <a href="" target='_blank' data-testid="slackEmail"> <i class="fa-solid fa-envelope"></i> </a>
+                <a href="mailto:zaynarb96@gmail.com" target='_blank' data-testid="slackEmail"> <i class="fa-solid fa-envelope"></i> </a>
                 <a href="https://twitter.com/zainabibraheem_" target='_blank' data-testid="myTwitter"> <i
                         class="fa-brands fa-twitter"></i> </a>
             </div>
@@ -177,12 +177,12 @@
 
         <div class="copyright-div">
             <i class="fa-regular fa-copyright"></i>
-            <div id="Year"></div>
-            <p>Zainab Ibrahim.</p>
+            <div id="Year" data-testid="currentYear"></div>
+            <p data-testid="slackDisplayName">Zainab Ibrahim.</p>
             <p>All rights reserved.</p>
         </div>
 
-        <div class="current-day" id="currentDay"></div>
+        <div class="current-day" id="currentDay" data-testid="currentDay"></div>
 
     </footer>
 </body>
