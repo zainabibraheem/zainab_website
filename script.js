@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const menuIcon = document.getElementById('menuIcon');
     const navLinks = document.getElementById('navLinks');
     const year = document.getElementById('currentYear');
-    const day = document.getElementById('currentDay')
+    const day = document.getElementById('currentDay');
+    const time = document.getElementById('time');
     let menuIsOpen = false;
 
     menuIcon.addEventListener('click', function () {
@@ -34,7 +35,15 @@ document.addEventListener('DOMContentLoaded', function () {
         month: 'long',
         day: 'numeric',
         year: 'numeric',
-    })
+    });
+
+    const hours = String(currentDate.getUTCHours()).padStart(2, '0');
+    const minutes = String(currentDate.getUTCMinutes()).padStart(2, '0');
+    const seconds = String(currentDate.getUTCSeconds()).padStart(2, '0');
+
+    const currentTime = `${hours}:${minutes}:${seconds} UTC`;
+
+    time.textContent = currentTime;
 
 
 day.textContent = `${currentDay} ${calender}`;

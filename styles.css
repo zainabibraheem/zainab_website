@@ -285,8 +285,10 @@ footer {
 }
 
 .current-day {
-   text-align: center;
-   margin: 5px;
+   display: flex;
+   justify-content: center;
+   gap: 6px;
+   margin-top: 5px;
 }
 
 
@@ -308,8 +310,8 @@ footer {
     }
 
     .current-day {
-        text-align: start;
-        margin: 5px;
+        justify-content: flex-start;
+        
      }
 
 }
